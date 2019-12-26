@@ -9,6 +9,7 @@
 <p> 3. The application makes use of the following mysql user and password : arquivei; password;
 If you want to use any other user and password, please make you've changed the following files : .env; bootstrap.php;
 </p>
-<p> 4. Run migrations (make sure all containers are up) </p>
+<p> 4. There are some variables in .env file which you need to fill in. </p>
+<p> 5. Run migrations (make sure all containers are up) </p>
 
 
