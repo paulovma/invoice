@@ -1,0 +1,17 @@
+doctrine:
+    dbal:
+        url: '%env(resolve:DATABASE_URL)%'
+        unix_socket: /var/lib/mysql/mysql.sock
+        server_version: '5.5'
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+        auto_mapping: true
+        mappings:
+            App:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/src/Domain'
+                prefix: 'App\Domain'
+                alias: App
+
