@@ -18,3 +18,7 @@ If you want to use any other user and password, please make you've changed the f
 <p> 5. There are some variables in .env file which you need to fill in. </p>
 <p> 6. If everything went well, the swagger documentation will be available in : /api/doc </p>
 
+<h2> Missing features </h2>
+
+<p> Integration Tests </p>
+<p> Swagger Documentation </p>
