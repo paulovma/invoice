@@ -10,12 +10,13 @@ use App\Domain\Invoice\Service\IFetchInvoice;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Swagger\Annotations as SWG;
 
 /**
  * Class FetchInvoiceAPI
  * @package App\API\FetchInvoice
  *
- * @Route("/fetch")
+ * @Route("/invoice/fetch")
  */
 class FetchInvoiceAPI extends AbstractFOSRestController
 {
@@ -47,6 +48,11 @@ class FetchInvoiceAPI extends AbstractFOSRestController
 
     /**
      * @Route(path="", name="fetch", methods={"POST"})
+     *
+     * @SWG\Response(
+     *     response=204,
+     *     description="Returned when the fetch went well."
+     * )
      */
     public function fetch()
     {

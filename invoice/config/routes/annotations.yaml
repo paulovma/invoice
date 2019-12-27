@@ -1,3 +1,4 @@
 controllers:
     resource: ../../src/API/
+    prefix: /api
     type: annotation

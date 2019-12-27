@@ -3,11 +3,17 @@
 
 namespace App\API\DTO;
 
+use Swagger\Annotations as SWG;
+
 
 class InvoiceTotalDTO
 {
 
-    /** @var float */
+    /**
+     * @var float
+     *
+     * @SWG\Property(type="number", description="The invoice's total value.")
+     */
     private $total;
 
     /**
