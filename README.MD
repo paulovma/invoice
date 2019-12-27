@@ -21,4 +21,3 @@ If you want to use any other user and password, please make you've changed the f
 <h2> Missing features </h2>
 
 <p> Integration Tests </p>
-<p> Swagger Documentation </p>
